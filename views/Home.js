@@ -1,5 +1,5 @@
 import React,{Component} from "react";
-import { View,WebView} from "react-native"
+import { View,WebView,Text} from "react-native"
 
 
 
@@ -7,11 +7,7 @@ export default class Home extends Component {
     render() {
       return (
         <View style={{ flex: 1 }}>
-          <WebView
-          source={{uri: 'http://192.168.2.131:3000/'}}
-          style={{width:'100%',height:'100%'}}
-          onLoad={this._onLoading.bind(this)}
-        />
+            <Text>这是我的项目首页</Text>
         </View>
       );
     
